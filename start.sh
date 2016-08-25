@@ -23,6 +23,10 @@ mv /data/.env /data/www/.env
 # 执行迁徙命令,创建应用KEY
 cd /data/www && php artisan key:generate && php artisan migrate --seed
 
+# 缓存文件夹权限
+chmod 777 /data/www/storage && chmod 777 /data/www/bootstrap/cache
+
+
 # Add PHP Extension
 if [ -f "/data/phpext/extension.sh" ]; then
     #Add support
