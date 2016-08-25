@@ -152,11 +152,12 @@ WORKDIR /data/www
 #Change Mod from webdir
 RUN chown -R www:www /data/www
 
-ADD extini/ /usr/local/php/etc/php.d/
-ADD extfile/ /data/phpext/
+#ADD extini/ /usr/local/php/etc/php.d/
+#ADD extfile/ /data/phpext/
 
 #Update nginx config
 ADD nginx.conf /usr/local/nginx/conf/
+ADD vhosts.conf /usr/local/nginx/conf/
 
 # 项目代码配置文件
 ADD .env /data/

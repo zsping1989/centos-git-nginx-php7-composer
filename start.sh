@@ -20,6 +20,9 @@ cd /data/www &&\
 # 移动项目代码配置文件
 mv /data/.env /data/www/.env
 
+# 执行迁徙命令,创建应用KEY
+cd /data/www && php artisan key:generate && php artisan migrate --seed
+
 # Add PHP Extension
 if [ -f "/data/phpext/extension.sh" ]; then
     #Add support
