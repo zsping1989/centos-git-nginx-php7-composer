@@ -1,11 +1,4 @@
 #!/bin/sh
-#########################################################################
-# File Name: start.sh
-# Author: Skiychan
-# Email:  dev@skiy.net
-# Version:
-# Created Time: 2015/12/13
-#########################################################################
 
 # 拉取代码
 git clone https://github.com/zsping1989/laravel.git /data/www

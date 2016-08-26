@@ -1,11 +1,4 @@
 #!/bin/sh
-#########################################################################
-# File Name: extension.sh
-# Author: Skiychan
-# Email:  dev@skiy.net
-# Version:
-# Created Time: 2016/08/03
-#########################################################################
 
 #Add extension xdebug
 curl -Lk https://github.com/xdebug/xdebug/archive/XDEBUG_2_4_0RC3.tar.gz | gunzip | tar x -C /home/extension && \
